@@ -4,6 +4,8 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Widget;
 using SQLite;
+using System.IO;
+using System;
 
 namespace WorkTimeTracker
 {
@@ -12,14 +14,16 @@ namespace WorkTimeTracker
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
+
             base.OnCreate(savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
             Button btnBeginTracking = FindViewById<Button>(Resource.Id.btnBeginTracking);
 
             btnBeginTracking.Click += (sender, e) =>
             {
-
+                
             };
         }
     }
